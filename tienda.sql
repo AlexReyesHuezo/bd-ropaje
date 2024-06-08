@@ -1,8 +1,8 @@
 CREATE DATABASE tienda;
 
-USE tiendita;
+USE tienda;
 
-CREATE TABLE Productos(
+CREATE TABLE productos(
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     descripcion VARCHAR(100) NOT NULL,
@@ -12,10 +12,10 @@ CREATE TABLE Productos(
     cantidadStock INT
 );
 
-CREATE TABLE Ventas(
+CREATE TABLE ventas(
     id INT AUTO_INCREMENT PRIMARY KEY,
     cantidad INT NOT NULL,
-    -- La fecha de la venta se guardará automaticamente con la fecha y hora actual --
-    -- CURRENT_TIMESTAMP es una funcion de MySQL que guarda la fecha y hora actual --
+    -- La fecha de la venta se guardará automaticamente con la fecha y hora actual
+    -- CURRENT_TIMESTAMP es una funcion de MySQL que guarda la fecha y hora actual
     fecha DATE DEFAULT CURRENT_TIMESTAMP NOT NULL,
 );
