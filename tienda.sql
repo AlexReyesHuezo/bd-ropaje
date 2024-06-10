@@ -43,6 +43,24 @@ CREATE TABLE employee(
     position VARCHAR(20) NOT NULL
 );
 
+INSERT INTO products (name, last_name, address, phone_number, email) VALUES
+    ('Sofia', 'Garcia', 'Madrid', '2728725', '1@gmail.com'),
+    ('Mateo', 'Rodríguez', 'Barcelona', '7587575', '2@gmail.com'),
+    ('Valentina', 'Martínez', 'París', '758785785', '3@gmail.com'),
+    ('Santiago', 'López', 'Londres', '578578557', '4@gmail.com'),
+    ('Lucia', 'González', 'NY', '578578575', '5@gmail.com'),
+    ('Martin', 'Pérez', 'Tokio', '8772237', '6@gmail.com'),
+    ('Isabella', 'Sánchez', 'Roma', '9554125', '7@gmail.com'),
+    ('Diego', 'Romero', 'Berlín', '142765765', '8@gmail.com'),
+    ('Camila', 'Díaz', 'Sídney', '254125412', '9@gmail.com'),
+    ('Sebastian', 'Flores', 'Río de Janeiro', '641376297', '10@gmail.com'),
+    ('Emma', 'Gómez', 'Buenos Aires', '415279821', '11@gmail.com'),
+    ('Nicolas', 'Muñoz', 'Estambul', '41898279', '12@gmail.com'),
+    ('Maria', 'Álvarez', 'Moscú', '4126721', '13@gmail.com'),
+    ('Alejandro', 'Jiménez', 'El Cairo', '1585877', '14@gmail.com'),
+    ('Ana', 'Torres', 'Bangkok', '71741725', '15@gmail.com');
+
+
 
 -- Here will be the insert statements for the tables
 INSERT INTO products (name, description, price, size, color, stock) VALUES
