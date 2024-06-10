@@ -72,7 +72,7 @@ SELECT * FROM products;
 -- Select the products that have a price greater than 20
 SELECT * FROM products WHERE price > 20;
 
-INSERT INTO sales (client_name, product, price) VALUES
+INSERT INTO sales (client, product, price) VALUES
     ('Alexander Reyes', 'T-shirt', 10.00),
     ('Jesús Patiño', 'Jeans', 30.00),
     ('Genoveba Cruz', 'Sneakers', 20.00),
