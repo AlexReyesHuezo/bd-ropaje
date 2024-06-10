@@ -43,7 +43,7 @@ CREATE TABLE employee(
     position VARCHAR(20) NOT NULL
 );
 
-INSERT INTO products (name, last_name, address, phone_number, email) VALUES
+INSERT INTO clients (name, last_name, address, phone_number, email) VALUES
     ('Sofia', 'Garcia', 'Madrid', '2728725', '1@gmail.com'),
     ('Mateo', 'Rodríguez', 'Barcelona', '7587575', '2@gmail.com'),
     ('Valentina', 'Martínez', 'París', '758785785', '3@gmail.com'),
@@ -57,8 +57,8 @@ INSERT INTO products (name, last_name, address, phone_number, email) VALUES
     ('Emma', 'Gómez', 'Buenos Aires', '415279821', '11@gmail.com'),
     ('Nicolas', 'Muñoz', 'Estambul', '41898279', '12@gmail.com'),
     ('Maria', 'Álvarez', 'Moscú', '4126721', '13@gmail.com'),
-    ('Alejandro', 'Jiménez', 'El Cairo', '1585877', '14@gmail.com'),
-    ('Ana', 'Torres', 'Bangkok', '71741725', '15@gmail.com');
+    ('Alejandro', 'Jiménez', 'El Cairo', '1585877', '14@gmail.com');
+
 
 
 
