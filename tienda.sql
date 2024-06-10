@@ -125,7 +125,7 @@ UPDATE products SET stock = 95 WHERE name = 'T-shirt';
 UPDATE products SET stock = 90 WHERE name = 'T-shirt';
 
 -- Delete the product with the id 14, this a hard delete, this is a high-risk sport
-DELETE FROM products WHERE id = 14 and name = 'Scarf';
+-- DELETE FROM products WHERE id = 14 and name = 'Scarf';
 
 -- Do a soft delete changing the status of the product to inactive
 ALTER TABLE products ADD COLUMN status VARCHAR(10) DEFAULT 'active';
@@ -135,7 +135,7 @@ UPDATE products SET status = 'inactive' WHERE id = 14;
 UPDATE products SET status = 'inactive' WHERE name = 'Scarf';
 
 -- Reset the auto increment value, and now the products table will start from 1
-ALTER TABLE products AUTO_INCREMENT = 1;
+-- ALTER TABLE products AUTO_INCREMENT = 1;
 
-INSERT INTO products (name, description, price, size, color, stock) VALUES
-    ('Scarf', 'Red scarf', 8.00, 'M', 'Red', 90);
+--INSERT INTO products (name, description, price, size, color, stock) VALUES
+ --   ('Scarf', 'Red scarf', 8.00, 'M', 'Red', 90);
