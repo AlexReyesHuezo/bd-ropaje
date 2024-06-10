@@ -120,9 +120,9 @@ SELECT * FROM sales WHERE price < 15;
 
 
 -- Large and more specific update
-UPDATE products SET stock_quantity = 95 WHERE usuarios.name = 'T-shirt';
+UPDATE products SET stock = 95 WHERE usuarios.name = 'T-shirt';
 -- Shorter update, but the same as above
-UPDATE products SET stock_quantity = 90 WHERE name = 'T-shirt';
+UPDATE products SET stock = 90 WHERE name = 'T-shirt';
 
 -- Delete the product with the id 14, this a hard delete, this is a high-risk sport
 DELETE FROM products WHERE id = 14 and name = 'Scarf';
@@ -137,5 +137,5 @@ UPDATE products SET status = 'inactive' WHERE name = 'Scarf';
 -- Reset the auto increment value, and now the products table will start from 1
 ALTER TABLE products AUTO_INCREMENT = 1;
 
-INSERT INTO products (name, description, price, size, color, stock_quantity) VALUES
+INSERT INTO products (name, description, price, size, color, stock) VALUES
     ('Scarf', 'Red scarf', 8.00, 'M', 'Red', 90);
