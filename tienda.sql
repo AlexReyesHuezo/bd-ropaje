@@ -38,6 +38,18 @@ CREATE TABLE sales (
     FOREIGN KEY (client_id) REFERENCES clients(id)
 );
 
+
+CREATE TABLE employee(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    address VARCHAR (50) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    email VARCHAR(30),
+    position VARCHAR(20) NOT NULL
+);
+
+
 -- Here will be the insert statements for the tables
 INSERT INTO products (name, description, price, size, color, stock_quantity) VALUES
     ('T-shirt', 'Basic white t-shirt', 10.00, 'M', 'White', 100),
