@@ -25,7 +25,7 @@ CREATE TABLE sales (
     client_name VARCHAR(25) NOT NULL,
     product VARCHAR(25) NOT NULL,
     price DECIMAL(5, 2) NOT NULL,
-    FOREIGN KEY (product) REFERENCES products(name)
+    FOREIGN KEY (product) REFERENCES products(name),
     FOREIGN KEY (client_name) REFERENCES clients(name)
 );
 
