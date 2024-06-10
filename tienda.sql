@@ -50,12 +50,12 @@ INSERT INTO products (name, description, price, size, color, stock) VALUES
     ('Jeans', 'Blue jeans', 30.00, '32', 'Blue', 50),
     ('Sneakers', 'Black sneakers', 20.00, '8', 'Black', 30),
     ('Sweater', 'Gray sweater', 25.00, 'M', 'Gray', 40),
-    ('Dress', 'Red dress', 35.00, 'S', 'Red', 20);
+    ('Dress', 'Red dress', 35.00, 'S', 'Red', 20),
     ('Hoodie', 'Black hoodie', 25.00, 'M', 'Black', 40),
     ('Shorts', 'Blue shorts', 15.00, 'M', 'Blue', 60),
     ('Shirt', 'White shirt', 20.00, 'M', 'White', 50),
     ('Jacket', 'Black jacket', 40.00, 'M', 'Black', 30),
-    ('Skirt', 'Black skirt', 20.00, 'S', 'Black', 25)
+    ('Skirt', 'Black skirt', 20.00, 'S', 'Black', 25),
     ('Hat', 'Black hat', 10.00, 'M', 'Black', 70),
     ('Socks', 'White socks', 5.00, 'M', 'White', 100),
     ('Gloves', 'Black gloves', 7.00, 'M', 'Black', 80),
