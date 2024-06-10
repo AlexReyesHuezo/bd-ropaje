@@ -72,27 +72,27 @@ SELECT * FROM products;
 -- Select the products that have a price greater than 20
 SELECT * FROM products WHERE price > 20;
 
-INSERT INTO sales (client, product, price) VALUES
-    ('Alexander Reyes', 'T-shirt', 10.00),
-    ('Jesús Patiño', 'Jeans', 30.00),
-    ('Genoveba Cruz', 'Sneakers', 20.00),
-    ('Casingena Pineda', 'Sweater', 25.00),
-    ('Carlos Venedicto', 'Dress', 35.00),
-    ('Jairo Roma', 'Hoodie', 25.00),
-    ('Jira Cima', 'Shorts', 15.00),
-    ('Jane Doe', 'Shirt', 20.00),
-    ('John Doe', 'Jacket', 40.00),
-    ('Jane Doe', 'Skirt', 20.00),
-    ('John Doe', 'Hat', 10.00),
-    ('Jane Doe', 'Socks', 5.00),
-    ('John Doe', 'Gloves', 7.00),
-    ('Jane Doe', 'Scarf', 8.00),
-    ('John Doe', 'Belt', 12.00),
-    ('Jane Doe', 'Purse', 30.00),
-    ('John Doe', 'Backpack', 25.00),
-    ('Jane Doe', 'Wallet', 15.00),
-    ('John Doe', 'Watch', 20.00),
-    ('Jane Doe', 'Bracelet', 10.00);
+INSERT INTO sales (client_id, product, price) VALUES
+    ('1', 'T-shirt', 10.00),
+    ('2', 'Jeans', 30.00),
+    ('3', 'Sneakers', 20.00),
+    ('4', 'Sweater', 25.00),
+    ('5', 'Dress', 35.00),
+    ('6', 'Hoodie', 25.00),
+    ('7', 'Shorts', 15.00),
+    ('8', 'Shirt', 20.00),
+    ('9', 'Jacket', 40.00),
+    ('9', 'Skirt', 20.00),
+    ('9', 'Hat', 10.00),
+    ('10', 'Socks', 5.00),
+    ('11', 'Gloves', 7.00),
+    ('11', 'Scarf', 8.00),
+    ('12', 'Belt', 12.00),
+    ('12', 'Purse', 30.00),
+    ('12', 'Backpack', 25.00),
+    ('12', 'Wallet', 15.00),
+    ('13', 'Watch', 20.00),
+    ('14', 'Bracelet', 10.00);
 
 SELECT * FROM sales;
 
