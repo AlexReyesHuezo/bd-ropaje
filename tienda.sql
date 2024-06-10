@@ -33,7 +33,7 @@ CREATE TABLE sales (
 );
 
 
-CREATE TABLE employee(
+CREATE TABLE employees(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(20) NOT NULL,
     last_name VARCHAR(20) NOT NULL,
@@ -111,6 +111,14 @@ INSERT INTO sales (client_id, product_id, price) VALUES
     ('12', 18, 15.00),
     ('13', 19, 20.00),
     ('14', 20, 10.00);
+
+INSERT INTO employees (name, last_name, address, phone_number, email) VALUES
+    ('Debora', 'Lorca', 'Santa Elena', '76584712', 'debby@gmail.com', 'sales'),
+    ('Wilfredo', 'Figueroa', 'Chanmiche', '75875750', 'chanmichero@gmail.com', 'storekeeper'),
+    ('Marcos', 'Rodriguez', 'San Diego', '79632587', 'marcos@gmail.com', 'sales'),
+    ('Marvin', 'Navarro', 'Santa Rosa', '78945612', 'dragoncro99@gmail.com', 'manager'),
+    ('David', 'Sibrian', 'Las Lomas', '74589632', 'dsibrian555@gmail.com', 'storekeeper'),
+    ('Fernando', 'Castro', 'Veranda', '71741725', 'fc.astro@gmail.com', 'sales');
 
 
 SELECT * FROM sales;
