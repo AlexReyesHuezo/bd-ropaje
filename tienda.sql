@@ -10,7 +10,16 @@ CREATE TABLE products (
     price DECIMAL(5, 2) NOT NULL,
     size VARCHAR(10) NOT NULL,
     color VARCHAR(15),
-    stock_quantity INT
+    stock INT
+);
+
+CREATE TABLE clients(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    address VARCHAR (50) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    email VARCHAR(30)
 );
 
 CREATE TABLE sales (
@@ -22,17 +31,11 @@ CREATE TABLE sales (
       I don't use the date data type because it doesn't have the time part
     */
     sale_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    client_name VARCHAR(25) NOT NULL,
-    product VARCHAR(25) NOT NULL,
+    client_id VARCHAR(25) NOT NULL,
+    product_id VARCHAR(25) NOT NULL,
     price DECIMAL(5, 2) NOT NULL,
-    FOREIGN KEY (product) REFERENCES products(name),
-    FOREIGN KEY (client_name) REFERENCES clients(name)
-);
-
--- Here will be the clients and employees tables
-CREATE TABLE clients (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    client_name VARCHAR(25) NOT NULL
+    FOREIGN KEY (product_id) REFERENCES products(id),
+    FOREIGN KEY (client_id) REFERENCES clients(id)
 );
 
 -- Here will be the insert statements for the tables
