@@ -120,7 +120,7 @@ SELECT * FROM sales WHERE price < 15;
 
 
 -- Large and more specific update
-UPDATE products SET stock = 95 WHERE usuarios.name = 'T-shirt';
+UPDATE products SET stock = 95 WHERE name = 'T-shirt';
 -- Shorter update, but the same as above
 UPDATE products SET stock = 90 WHERE name = 'T-shirt';
 
