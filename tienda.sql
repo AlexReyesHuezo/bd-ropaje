@@ -112,7 +112,7 @@ INSERT INTO sales (client_id, product_id, price) VALUES
     ('13', 19, 20.00),
     ('14', 20, 10.00);
 
-INSERT INTO employees (name, last_name, address, phone_number, email) VALUES
+INSERT INTO employees (name, last_name, address, phone_number, email, position) VALUES
     ('Debora', 'Lorca', 'Santa Elena', '76584712', 'debby@gmail.com', 'sales'),
     ('Wilfredo', 'Figueroa', 'Chanmiche', '75875750', 'chanmichero@gmail.com', 'storekeeper'),
     ('Marcos', 'Rodriguez', 'San Diego', '79632587', 'marcos@gmail.com', 'sales'),
