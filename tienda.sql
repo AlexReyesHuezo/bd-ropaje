@@ -90,27 +90,28 @@ SELECT * FROM products;
 -- Select the products that have a price greater than 20
 SELECT * FROM products WHERE price > 20;
 
-INSERT INTO sales (client_id, product, price) VALUES
-    ('1', 'T-shirt', 10.00),
-    ('2', 'Jeans', 30.00),
-    ('3', 'Sneakers', 20.00),
-    ('4', 'Sweater', 25.00),
-    ('5', 'Dress', 35.00),
-    ('6', 'Hoodie', 25.00),
-    ('7', 'Shorts', 15.00),
-    ('8', 'Shirt', 20.00),
-    ('9', 'Jacket', 40.00),
-    ('9', 'Skirt', 20.00),
-    ('9', 'Hat', 10.00),
-    ('10', 'Socks', 5.00),
-    ('11', 'Gloves', 7.00),
-    ('11', 'Scarf', 8.00),
-    ('12', 'Belt', 12.00),
-    ('12', 'Purse', 30.00),
-    ('12', 'Backpack', 25.00),
-    ('12', 'Wallet', 15.00),
-    ('13', 'Watch', 20.00),
-    ('14', 'Bracelet', 10.00);
+INSERT INTO sales (client_id, product_id, price) VALUES
+    ('1', 1, 10.00),
+    ('2', 2, 30.00),
+    ('3', 3, 20.00),
+    ('4', 4, 25.00),
+    ('5', 5, 35.00),
+    ('6', 6, 25.00),
+    ('7', 7, 15.00),
+    ('8', 8, 20.00),
+    ('9', 9, 40.00),
+    ('9', 10, 20.00),
+    ('9', 11, 10.00),
+    ('10', 12, 5.00),
+    ('11', 13, 7.00),
+    ('11', 14, 8.00),
+    ('12', 15, 12.00),
+    ('12', 16, 30.00),
+    ('12', 17, 25.00),
+    ('12', 18, 15.00),
+    ('13', 19, 20.00),
+    ('14', 20, 10.00);
+
 
 SELECT * FROM sales;
 
