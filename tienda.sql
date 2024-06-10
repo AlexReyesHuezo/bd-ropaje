@@ -24,15 +24,9 @@ CREATE TABLE clients(
 
 CREATE TABLE sales (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    /*
-      Sales date will be saved automatically with the current date and time and the format YYYY-MM-DD HH:MM:SS
-      This is done with the CURRENT_TIMESTAMP MySQL function and the TIMESTAMP data type
-      I don't need to insert a value for this column, it will be done automatically
-      I don't use the date data type because it doesn't have the time part
-    */
     sale_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    client_id VARCHAR(25) NOT NULL,
-    product_id VARCHAR(25) NOT NULL,
+    client_id INT NOT NULL,
+    product_id INT NOT NULL,
     price DECIMAL(5, 2) NOT NULL,
     FOREIGN KEY (product_id) REFERENCES products(id),
     FOREIGN KEY (client_id) REFERENCES clients(id)
