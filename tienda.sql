@@ -134,8 +134,9 @@ UPDATE products SET status = 'inactive' WHERE id = 14;
 -- The same as above but using the name column
 UPDATE products SET status = 'inactive' WHERE name = 'Scarf';
 
--- Reset the auto increment value, and now the products table will start from 1
+-- Reset the auto increment value, and now the products table will start from 1 
 ALTER TABLE products AUTO_INCREMENT = 1;
 
---INSERT INTO products (name, description, price, size, color, stock) VALUES
- --   ('Scarf', 'Red scarf', 8.00, 'M', 'Red', 90);
+-- INSERT INTO products (name, description, price, size, color, stock) 
+-- VALUES ('Scarf', 'Red scarf', 8.00, 'M', 'Red', 90);
+
