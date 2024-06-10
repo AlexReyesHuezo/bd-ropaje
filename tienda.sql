@@ -45,7 +45,7 @@ CREATE TABLE employee(
 
 
 -- Here will be the insert statements for the tables
-INSERT INTO products (name, description, price, size, color, stock_quantity) VALUES
+INSERT INTO products (name, description, price, size, color, stock) VALUES
     ('T-shirt', 'Basic white t-shirt', 10.00, 'M', 'White', 100),
     ('Jeans', 'Blue jeans', 30.00, '32', 'Blue', 50),
     ('Sneakers', 'Black sneakers', 20.00, '8', 'Black', 30),
