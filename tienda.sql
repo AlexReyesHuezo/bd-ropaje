@@ -32,7 +32,7 @@ CREATE TABLE sales (
 -- Here will be the clients and employees tables
 CREATE TABLE clients (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(25) NOT NULL UNIQUE
+    clients_name VARCHAR(25) NOT NULL
 );
 
 -- Here will be the insert statements for the tables
